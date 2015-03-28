@@ -11,4 +11,4 @@ sed -i -e "s#^elasticsearch_url: .*\$#elasticsearch_url: \"${ELASTICSEARCH_URI}\
 unset HOST
 unset PORT
 
-exec /opt/kibana/bin/kibana
+exec /opt/kibana/bin/kibana $@
